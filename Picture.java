@@ -8,14 +8,17 @@
  * 
  * @author  David Thompson
  * @version 2020-09-09
+ * 
+ * Esentially, the left side of the picuture shows a person looking at a table. 
+ * The right side of the picture shows the top of the table, which contains
+ * three cards. The three cards represent three planets: Mars, Jupiter, and Saturn. 
+ * I also had to adjust the Square class so that the length and width
+ * could be adjusted, so that I could get the cards and the table top to 
+ * the proper dimentions, and I added the color brown in Canvas to use for the table.
+ * 
  */
 public class Picture
 {
-    // private Square wall;
-    // private Square window;
-    // private Triangle roof;
-    // private Circle sun;
-    // private boolean drawn;
     private Person person;
     private Triangle tableBottom;
     private Square tableTop;
@@ -35,11 +38,6 @@ public class Picture
      */
     public Picture()
     {
-        // wall = new Square();
-        // window = new Square();
-        // roof = new Triangle();  
-        // sun = new Circle();
-        // drawn = false;
         person = new Person();
         tableBottom = new Triangle();
         tableTop = new Square();
@@ -131,6 +129,8 @@ public class Picture
             saturnRing.moveVertical(105);
             saturnRing.moveHorizontal(-64);
             saturnRing.makeVisible();
+            
+            drawn = true;
         }
     }
 

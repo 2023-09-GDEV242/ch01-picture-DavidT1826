@@ -9,6 +9,7 @@ import java.awt.*;
 
 public class Square
 {
+    //Split size into height and width so that I could alter both
     private int height;
     private int width;
     private int xPosition;
@@ -21,6 +22,7 @@ public class Square
      */
     public Square()
     {
+        //Size also split into height and width here
         height = 60;
         width = 60;
         xPosition = 310;
@@ -149,6 +151,7 @@ public class Square
 
     /**
      * Change the size to the new size (in pixels). Size must be >= 0.
+     * (Size was split into two variables: Height and Width)
      */
     public void changeSize(int newHeight, int newWidth)
     {
@@ -170,6 +173,7 @@ public class Square
 
     /**
      * Draw the square with current specifications on screen.
+     * (I seperated the two sizes into width and height)
      */
     private void draw()
     {

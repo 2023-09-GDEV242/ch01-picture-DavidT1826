@@ -145,6 +145,7 @@ public class Canvas
         }
         else if(colorString.equals("brown")) {
             graphic.setColor(new Color(218, 160, 109));
+            //Added brown to use for the table
         }
         else {
             graphic.setColor(Color.black);
