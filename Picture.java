@@ -90,39 +90,84 @@ public class Picture
             card1.moveHorizontal(-80);
             card1.makeVisible();
             
+            mars.changeColor("red");
+            mars.changeSize(30);
+            mars.moveVertical(-60);
+            mars.moveHorizontal(15);
+            mars.makeVisible();
+            
             card2.changeColor("black");
             card2.changeSize(100, 75);
-            card2.moveVertical(-30);
+            card2.moveVertical(-20);
             card2.moveHorizontal(70);
             card2.makeVisible();
+            
+            jupiter.changeColor("yellow");
+            jupiter.changeSize(55);
+            jupiter.moveVertical(20);
+            jupiter.moveHorizontal(155);
+            jupiter.makeVisible();
+            
+            jupiterSpot.changeColor("red");
+            jupiterSpot.changeSize(20);
+            jupiterSpot.moveVertical(40);
+            jupiterSpot.moveHorizontal(165);
+            jupiterSpot.makeVisible();
             
             card3.changeColor("black");
             card3.changeSize(100, 75);
             card3.moveVertical(70);
             card3.moveHorizontal(-80);
             card3.makeVisible();
+            
+            saturn.changeColor("yellow");
+            saturn.changeSize(45);
+            saturn.moveVertical(115);
+            saturn.moveHorizontal(15);
+            saturn.makeVisible();
+            
+            saturnRing.changeColor("white");
+            saturnRing.changeSize(5, 44);
+            saturnRing.moveVertical(105);
+            saturnRing.moveHorizontal(-64);
+            saturnRing.makeVisible();
         }
     }
 
     /**
      * Change this picture to black/white display
      */
-    // public void setBlackAndWhite()
-    // {
-        // wall.changeColor("black");
-        // window.changeColor("white");
-        // roof.changeColor("black");
-        // sun.changeColor("black");
-    // }
+    public void setBlackAndWhite()
+     {
+       tableBottom.changeColor("black");
+       tableTop.changeColor("black");
+       table.changeColor("black");
+       card1.changeColor("white");
+       mars.changeColor("black");
+       card2.changeColor("white");
+       jupiter.changeColor("black");
+       jupiterSpot.changeColor("white");
+       card3.changeColor("white");
+       saturn.changeColor("black");
+       saturnRing.changeColor("white");
+       
+     }
 
     /**
      * Change this picture to use color display
      */
-    // public void setColor()
-    // {
-        // wall.changeColor("red");
-        // window.changeColor("black");
-        // roof.changeColor("green");
-        // sun.changeColor("yellow");
-    // }
+    public void setColor()
+     {
+        tableBottom.changeColor("brown");
+        tableTop.changeColor("brown");
+        table.changeColor("brown");
+        card1.changeColor("black");
+        mars.changeColor("red");
+        card2.changeColor("black");
+        jupiter.changeColor("yellow");
+        jupiterSpot.changeColor("red");
+        card3.changeColor("black");
+        saturn.changeColor("yellow");
+        saturnRing.changeColor("white");
+     }
 }
