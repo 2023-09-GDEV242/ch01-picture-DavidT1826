@@ -19,7 +19,6 @@ public class Picture
     private Person person;
     private Triangle tableBottom;
     private Square tableTop;
-    private Square seperator;
     private Square table;
     private Square card1;
     private Circle mars;
@@ -29,6 +28,7 @@ public class Picture
     private Square card3;
     private Circle saturn;
     private Square saturnRing;
+    private boolean drawn;
 
     /**
      * Constructor for objects of class Picture
@@ -43,7 +43,6 @@ public class Picture
         person = new Person();
         tableBottom = new Triangle();
         tableTop = new Square();
-        seperator = new Square();
         table = new Square();
         card1 = new Square();
         mars = new Circle();
@@ -53,6 +52,7 @@ public class Picture
         card3 = new Square();
         saturn = new Circle();
         saturnRing = new Square();
+        drawn = false;
         
     }
 
@@ -62,28 +62,45 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-             // wall.moveHorizontal(-140);
-             // wall.moveVertical(20);
-            // // // wall.changeSize(120);
-            // // // wall.makeVisible();
+            person.changeSize(100, 50);
+            person.moveHorizontal(-250);
+            person.makeVisible();
             
-            // // // window.changeColor("black");
-            // // // window.moveHorizontal(-120);
-            // // // window.moveVertical(40);
-            // // // window.changeSize(40);
-            // // // window.makeVisible();
-    
-            // // // roof.changeSize(60, 180);
-            // // // roof.moveHorizontal(20);
-            // // // roof.moveVertical(-60);
-            // // // roof.makeVisible();
-    
-            // // // sun.changeColor("yellow");
-            // // // sun.moveHorizontal(100);
-            // // // sun.moveVertical(-40);
-            // // // sun.changeSize(80);
-            // // // sun.makeVisible();
-            // // // drawn = true;
+            tableBottom.changeColor("brown");
+            tableBottom.changeSize(50, 40);
+            tableBottom.moveHorizontal(-85);
+            tableBottom.moveVertical(70);
+            tableBottom.makeVisible();
+            
+            tableTop.changeColor("brown");
+            tableTop.changeSize(30, 90);
+            tableTop.moveHorizontal(-225);
+            tableTop.moveVertical(70);
+            tableTop.makeVisible();
+            
+            table.changeColor("brown");
+            table.changeSize(550, 400);
+            table.moveVertical(-300);
+            table.moveHorizontal(-100);
+            table.makeVisible();
+            
+            card1.changeColor("black");
+            card1.changeSize(100, 75);
+            card1.moveVertical(-110);
+            card1.moveHorizontal(-80);
+            card1.makeVisible();
+            
+            card2.changeColor("black");
+            card2.changeSize(100, 75);
+            card2.moveVertical(-30);
+            card2.moveHorizontal(70);
+            card2.makeVisible();
+            
+            card3.changeColor("black");
+            card3.changeSize(100, 75);
+            card3.moveVertical(70);
+            card3.moveHorizontal(-80);
+            card3.makeVisible();
         }
     }
 
